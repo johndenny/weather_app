@@ -6,6 +6,10 @@ export default async function newWeather() {
   document.querySelector('.loadingWheel').classList.toggle('none');
   const input = document.querySelector('input').value;
   try {
+<<<<<<< HEAD
+=======
+    const input = document.querySelector('input').value;
+>>>>>>> 0fa16b605b0d981a0b522faa82f5eff7ad997ae6
     const responseMetric = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${input}&units=metric&APPID=4da0b70995463ed570d9e1fbbbd99315`, {
       mode: 'cors',
     });
