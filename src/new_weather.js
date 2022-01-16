@@ -4,8 +4,8 @@ export default async function newWeather() {
   document.querySelector('.weatherContainer').innerHTML = '';
   document.querySelector('.weatherWeekContainer').innerHTML = '';
   document.querySelector('.loadingWheel').classList.toggle('none');
+  const input = document.querySelector('input').value;
   try {
-    const input = document.querySelector('input').value;
     const responseMetric = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${input}&units=metric&APPID=4da0b70995463ed570d9e1fbbbd99315`, {
       mode: 'cors',
     });
